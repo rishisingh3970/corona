@@ -1,0 +1,221 @@
+body{
+    margin:0;
+    font-family: "poppins", sans-serif;
+    background-image: url(https://www.teahub.io/photos/full/36-364691_wallpaper-of-abstract-red-line-light-background-digital.jpg);
+  }
+  * {
+    box-sizing: border-box;
+  }
+h1{
+    margin: 1px;
+  }
+.logo{
+    cursor: pointer;
+  }
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    background: #fffbd5; 
+    background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  
+    background: linear-gradient(to right, #b20a2c, #fffbd5); 
+  }
+.navbar ul li{
+    display: inline-block;
+  }
+.navbar li a{
+    display: block;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 35px 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition-duration: 0.5s;
+  }
+.navbar a:hover{
+    text-decoration: none;
+    margin: 0;
+    border: 0.7px solid white;
+    margin: 10px;
+    padding: 3px;
+  }
+.rishi-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:95%;
+    height: 98vh;
+    background-size: cover;
+  }
+  .rishi-text{
+    color: red;
+    text-align:center;
+    text-transform: uppercase;
+  }
+.rishi-text h1{
+    font-size: 140px;
+    font-family: 'Caveat', cursive;
+  }
+.rishi-text{
+    letter-spacing:6px;
+    font-size: 25px;
+  }
+.rishi-section img{
+  height: 60rem;
+}
+.rishi {
+  display: flex;
+  color: white;
+  padding: 100px 150px 150px 100px;
+  position: center;
+}
+.rishi h1 {
+  font-size: 325%;
+  text-align: center;
+}
+.rishi p {
+  font-weight: 400%;
+  font-family: serif;
+  font-size: 150%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.rishi2 {
+
+  display: flex;
+  color: white;
+  padding: 100px 150px 150px 100px;
+  position: center;
+}
+
+.rishi2 h1 {
+  font-size: 325%;
+  text-align: center;
+}
+.rishi2 p {
+  font-weight: 400%;
+  text-align: center;
+  font-family: serif;
+  font-size: 150%;
+  padding-left: 23%;
+  padding-right: 20%;
+}
+.flex {
+  display: flex;
+  color: white;
+  padding-left: 7%;
+  padding-right: 3%;
+  position: center;
+  font-size: 25px;
+}
+
+.flex--vertical {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 3%;
+  font-size: 25px;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: rgb(181, 184, 37);
+  }
+}
